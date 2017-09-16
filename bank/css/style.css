@@ -1,0 +1,78 @@
+*{
+	margin:0;padding: 0;
+}
+li{
+	list-style: none;
+}
+html,body,.app{
+	width: 100%;height: 100%;
+}
+.app{
+	position: relative;
+}
+.mark{
+	position: absolute;
+	left: 0;top:0;
+	width: 100%;height: 100%;
+	background:rgba(0,0,0,.5);
+}
+.content{
+	position: absolute;
+	width:500px;
+	height: 360px;
+	left: 50%;top: 50%;
+  	transform: translate(-50%,-50%);
+	background: #fff;
+}
+.title{
+	height: 45px;
+	line-height: 45px;
+	background: #eee;
+	border-bottom: 1px  solid #ccc;
+	text-align: center;
+}
+.all{
+	display:flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+.all li{
+	width:33.3333%;
+	height: 50px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.all li.active{
+	color:#f00;
+}
+.btns{
+	height: 55px;
+	background: #eee;
+	padding-top: 15px;
+	border-top: 1px solid #ccc;
+}
+.btns span{
+	display: inline-block;
+	width:100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 20px;
+	border:1px solid #E96F58;
+	margin-right: 5%;
+	cursor: pointer;
+}
+.btns .no{
+	margin-left: 25%;
+	color:#E96F58;
+}
+.btns .yes{
+	background: #E96F58;
+	color:#fff;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
